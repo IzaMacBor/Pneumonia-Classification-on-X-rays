@@ -1,6 +1,7 @@
 import os
 import cv2
 import numpy as np
+import json
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Model
@@ -117,7 +118,16 @@ class XRayTrainer:
         history = model.train_model(train_generator, valid_generator, steps_per_epoch, epochs, self.callbacks)
         model.save_model(f"model_weights/{model_name}.h5")
         model.evaluate_model(valid_generator, test_generator)
+
+        history_path = f"model_weights/{model_name}_history.json"
+        with open(history_path, "w") as f:
+            json.dump(history.history, f)
+
+        print(f"Training history saved to {history_path}")
+
         return history
+    
+        
 
 # Example usage
 trainer = XRayTrainer(base_dir="chest_xrays/chest_xray")
