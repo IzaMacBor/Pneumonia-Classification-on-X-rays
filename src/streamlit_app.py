@@ -6,10 +6,12 @@ from PIL import Image
 import io
 import matplotlib.pyplot as plt
 import seaborn as sns
+import gdown
 
 # Load the trained model
-MODEL_PATH = "model_weights/vgg19_best.h5"
-model = tf.keras.models.load_model(MODEL_PATH)
+url = 'https://drive.google.com/file/d/1TALapF3XvPQAxV0QY-EKOGN4piFTT-w9/view?usp=drive_link'
+gdown.download(url, 'vgg19_best.h5', quiet=False)
+model = tf.keras.models.load_model('vgg19_best.h5')
 
 # Define image size
 IMG_SIZE = 128
