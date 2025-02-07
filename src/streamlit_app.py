@@ -10,8 +10,9 @@ import gdown
 
 # Load the trained model
 url = 'https://drive.google.com/file/d/1TALapF3XvPQAxV0QY-EKOGN4piFTT-w9/view?usp=drive_link'
-gdown.download(url, 'vgg19_best.h5', quiet=False)
-model = tf.keras.models.load_model('vgg19_best.h5')
+output = 'vgg19_best.h5'
+gdown.download(url, output, quiet=False)
+model = tf.keras.models.load_model(output)
 
 # Define image size
 IMG_SIZE = 128
