@@ -1,10 +1,12 @@
 # Chest X-Ray Pneumonia Classification 🩺🦠
 
-A deep learning project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model. 
+A project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model. 
 
 ## Project Overview 💡
 
 This project implements a binary classification system for chest X-ray images using transfer learning with the VGG19 architecture. The system is designed to assist in the identification of pneumonia cases from chest X-ray images. 
+
+![Streamlit Demo](streamlit_demo.gif)
 
 ## Dataset 📚
 
@@ -210,6 +212,7 @@ Alternatively, you can run the Streamlit app for an interactive interface to mak
 streamlit run src/streamlit_app.py
 ```
 This will launch a web-based interface where you can upload an image and get real-time predictions from the trained model!
+
 
 
 ## Future Improvements 🔮
