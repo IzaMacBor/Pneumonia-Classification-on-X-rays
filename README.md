@@ -2,11 +2,12 @@
 
 This project was completed during the AI BootCamp at BeCode in Ghent.  
 Check out the [BeCode website](https://www.becode.org) for more information.  
-A project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model. 
+
 
 ## Project Overview 💡
-
-This project implements a binary classification system for chest X-ray images using transfer learning with the VGG19 architecture. The system is designed to assist in the identification of pneumonia cases from chest X-ray images. 
+A project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model.   
+This project implements a binary classification system for chest X-ray images using transfer learning with the VGG19 architecture.  
+The system is designed to assist in the identification of pneumonia cases from chest X-ray images. 
 
 ![Streamlit Demo](streamlit_demo.gif)
 
