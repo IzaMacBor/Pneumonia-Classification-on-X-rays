@@ -18,7 +18,8 @@ The system is designed to assist in the identification of pneumonia cases from c
 
 ## Dataset 📚
 
-The dataset used in this project is the Chest X-Ray Images (Pneumonia) dataset from Kaggle, available at: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+The dataset used in this project is the Chest X-Ray Images (Pneumonia) dataset from Kaggle, available at: 
+[Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 
 Please download the dataset before running the code. The dataset consists of chest X-ray images categorized into two classes:
 
