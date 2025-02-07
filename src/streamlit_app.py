@@ -9,10 +9,8 @@ import seaborn as sns
 import gdown
 
 # Load the trained model
-url = 'https://drive.google.com/file/d/1TALapF3XvPQAxV0QY-EKOGN4piFTT-w9/view?usp=drive_link'
-output = 'vgg19_best.h5'
-gdown.download(url, output, quiet=False)
-model = tf.keras.models.load_model(output)
+model_path = 'model_weights/vgg19_best.h5'
+model = tf.keras.models.load_model(model_path)
 
 # Define image size
 IMG_SIZE = 128
