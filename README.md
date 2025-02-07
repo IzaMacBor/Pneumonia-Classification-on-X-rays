@@ -1,7 +1,7 @@
 # Chest X-Ray Pneumonia Classification 🩺🦠
 
-This project was completed during the AI BootCamp at BeCode in Ghent. 
-Check out the [BeCode website](https://www.becode.org) for more information.
+This project was completed during the AI BootCamp at BeCode in Ghent.  
+Check out the [BeCode website](https://www.becode.org) for more information.  
 A project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model. 
 
 ## Project Overview 💡
