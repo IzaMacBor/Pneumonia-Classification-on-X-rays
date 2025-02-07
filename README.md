@@ -3,11 +3,16 @@
 This project was completed during the AI BootCamp at BeCode in Ghent.  
 Check out the [BeCode website](https://www.becode.org) for more information.  
 
+# Check the Model and Application Online 🌐  
+
+You can test the pneumonia classification model from X-ray images and the Streamlit application online by clicking the link below:  
+[Streamlit App](https://pneumonia-classification-on-x-rays-imb.streamlit.app/)
 
 ## Project Overview 💡
 A project for classifying chest X-ray images as either normal or showing signs of pneumonia using a fine-tuned VGG19 model.   
 This project implements a binary classification system for chest X-ray images using transfer learning with the VGG19 architecture.  
-The system is designed to assist in the identification of pneumonia cases from chest X-ray images. 
+The system is designed to assist in the identification of pneumonia cases from chest X-ray images.  
+
 
 ![Streamlit Demo](streamlit_demo.gif)
 
@@ -22,7 +27,8 @@ Please download the dataset before running the code. The dataset consists of che
 
 ## Model Weights ⚙️
 
-The model weights will be generated after running the training code. They are not included in the repository and will be created during the execution of the code. 
+The model weights will be generated after running the training code. They are not included in the repository and will be created during the execution of the code.  
+The only model weight file included in the repository is `vgg19_best.h5.`
 
 
 ## Features 🚀
