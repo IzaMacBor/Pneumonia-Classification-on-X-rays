@@ -54,6 +54,7 @@ The model weights will be generated after running the training code. They are no
 ├── classification_report.txt
 ├── README.md
 ├── requirements.txt
+├── streamlit_demo.gif
 ```
 
 ## Requirements 📜
