@@ -101,7 +101,7 @@ if uploaded_file is not None:
     img = Image.open(io.BytesIO(image_data))
 
     # Show zoomable image using st.image with 'use_column_width'
-    st.image(img, caption="Uploaded X-ray Image", use_column_width=True)
+    st.image(img, caption="Uploaded X-ray Image", use_container_width=True)
     
     # Prediction processing
     with st.spinner("Analyzing the image..."):
