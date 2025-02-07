@@ -17,6 +17,7 @@ CLASS_NAMES = ['Normal', 'Pneumonia']
 
 def preprocess_image(img):
     """Preprocesses the uploaded image to match model input requirements."""
+    img = img.convert('RGB')
     img = img.resize((IMG_SIZE, IMG_SIZE))
     img = image.img_to_array(img)
     img = np.expand_dims(img, axis=0)  # Add batch dimension

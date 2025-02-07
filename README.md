@@ -40,6 +40,8 @@ The model weights will be generated after running the training code. They are no
 │   └── vgg19_model_01_history.json
 │   └── vgg19_model_02_history.json
 └── src/
+│   └── main.py
+│   └── streamlit_app.py
 │   └── train.py
 │   └── visualize.py
 ├── visuals/
@@ -61,6 +63,7 @@ The model weights will be generated after running the training code. They are no
 - Matplotlib
 - Seaborn
 - scikit-learn
+- Streamlit 
 
 ## Design Decisions and Methodology 🤖
 
@@ -199,6 +202,15 @@ To run the application, use the main.py script, which integrates model loading, 
 ```
 python src/main.py --model model_weights/vgg19_best.h5 --data chest_xrays/chest_xray
 ```
+
+Streamlit App 🌐
+
+Alternatively, you can run the Streamlit app for an interactive interface to make predictions on X-ray images:
+```
+streamlit run src/streamlit_app.py
+```
+This will launch a web-based interface where you can upload an image and get real-time predictions from the trained model!
+
 
 ## Future Improvements 🔮
 
