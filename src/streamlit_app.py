@@ -78,7 +78,7 @@ with st.sidebar:
     st.write("""  
         To learn more about how the model works or to explore additional details, visit the GitHub repository. 
         """)
-    st.markdown("[GitHub Repository](https://github.com/yourrepo)")
+    st.markdown("[GitHub Repository](https://github.com/IzaMacBor/Pneumonia-Classification-on-X-rays)")
 
 # Header with custom styling
 st.markdown("""<style>
