@@ -129,14 +129,3 @@ class XRayTrainer:
     
         
 
-# Example usage
-trainer = XRayTrainer(base_dir="chest_xrays/chest_xray")
-
-# Train initial model
-history_01 = trainer.train_model_variant("vgg19_model_01", epochs=20)
-
-# Fine-tune with last two convolutional layers unfrozen
-history_02 = trainer.train_model_variant("vgg19_model_02", weights_path="model_weights/vgg19_model_01.h5", trainable_layers=["block5_conv3", "block5_conv4"], epochs=10)
-
-# Train another version from pre-trained weights with different parameters
-history_03 = trainer.train_model_variant("vgg19_model_03", weights_path="model_weights/vgg19_model_01.h5", epochs=5, steps_per_epoch=100)

@@ -1,2 +1,6 @@
 chest_xrays
 model_weights
+pneumonia_detection.ipynb
+Dockerfile
+.dockerignore
+pneumonia_streamlit_app

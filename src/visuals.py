@@ -151,20 +151,7 @@ class ModelVisualizer:
         plt.savefig(save_path)
         plt.close()
 
-def main():
-    # Paths - adjust based on your environment
-    model_path = 'model_weights/vgg19_model_02.h5'
-    data_path = 'chest_xrays/chest_xray'
-    history_path = 'model_weights/vgg19_model_02_history.json'
-    
-    visualizer = ModelVisualizer(model_path, data_path)
-    
-    # Visualizations
-    visualizer.plot_training_history(history_path)
-    visualizer.plot_confusion_matrix()
-    visualizer.visualize_sample_predictions()
-    report = visualizer.generate_classification_report()
-    print(report)
-
-if __name__ == '__main__':
-    main()
+# Paths - adjust based on your environment
+model_path = 'model_weights/vgg19_model_02.h5'
+data_path = 'chest_xrays/chest_xray'
+history_path = 'model_weights/vgg19_model_02_history.json'
