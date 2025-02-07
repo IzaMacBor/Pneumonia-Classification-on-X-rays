@@ -17,6 +17,9 @@ IMG_SIZE = 128
 # Class labels
 CLASS_NAMES = ['NORMAL', 'PNEUMONIA']
 
+# Sidebar for language selection
+language = st.sidebar.selectbox("Wybierz język / Choose a language / Kies een taal:", 
+                                ["English", "Polski", "Nederlands"])
 # Translation dictionary
 translations = {
     "English": {
@@ -131,9 +134,9 @@ def load_classification_report():
 # Streamlit UI setup
 st.set_page_config(page_title="Pneumonia Detection", page_icon="🩺", layout="wide")
 
-# Sidebar for language selection
-language = st.sidebar.selectbox("Wybierz język / Choose a language / Kies een taal:", 
-                                ["English", "Polski", "Nederlands"])
+
+
+
 
 # Load translations for selected language
 t = translations[language]
