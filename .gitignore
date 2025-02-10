@@ -4,3 +4,4 @@ pneumonia_detection.ipynb
 Dockerfile
 .dockerignore
 pneumonia_streamlit_app
+multilang_app.py
